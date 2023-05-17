@@ -1,0 +1,96 @@
+:root{
+    --bright-pink: #ffeaef;
+    --bright-pink2: #ffd2dd;
+    --pink: #ff597d;
+    --text: #04052a;
+    --pagination: #676770;
+    --green: rgb(13, 150, 13);
+}
+
+.shopping{
+    padding: 50px 4%;
+}
+
+.choose{
+    text-align: center;
+    padding: 120px 4% 30px 4%;
+}
+
+.choose a{
+    padding: 10px 20px;
+    font-size: 25px;
+}
+
+a.active{
+    color: var(--pink);
+    border-bottom: 3px solid var(--pink);
+}
+
+.shopping .container{
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    gap: 50px 30px;
+}
+
+.shopping .container .box{
+    overflow: hidden;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.shopping .container .box:hover .image img{
+    transform: scale(1.1);
+}
+
+.shopping .container .box .image img{
+    width: 100%;
+    height: auto;
+    transition: .8s;
+}
+
+.shopping .container .box .details{
+    padding: 12px 14px;
+    text-align: center;
+}
+
+.shopping .container .box .details h5{
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+
+.shopping .container .box .details p.price{
+    text-align: left;
+    font-size: 19px;
+    font-weight: 600;
+}
+
+.shopping .container .box .details p.flex{
+    display: flex;
+    justify-content: space-between;
+}
+
+.shopping .container .box .details span.cancel{
+    text-decoration: line-through;
+    color: red;
+}
+
+.shopping .container .box .details span.green{
+    color: var(--green);
+}
+
+.shopping .container .box .details button{
+    border-radius: 10px;
+    width: 90%;
+    display: inline-block;
+    margin: 12px 0;
+    padding: 12px;
+    background-color: var(--pink);
+    border: none;
+    font-size: 16px;
+    color: white;
+    cursor: pointer;
+    transition: .8s;
+}
+
+.shopping .container .box .details button:hover{
+    background-color: var(--green);
+}
