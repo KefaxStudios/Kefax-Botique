@@ -1,3 +1,4 @@
+
 :root{
     --bright-pink: #ffeaef;
     --bright-pink2: #ffd2dd;
@@ -5,6 +6,7 @@
     --text: #04052a;
     --pagination: #676770;
 }
+
 
 h1, h2, h3, h4, h5, h6, p{
     padding: 0;
@@ -318,7 +320,7 @@ h1.heading{
     display: flex;
     align-items: center;
     justify-content: center;
-    width: 35%;
+    width: 48%;
     background-color: var(--pink);
     margin: 2px auto;
 }
@@ -425,8 +427,14 @@ h1.heading{
     background-color: var(--bright-pink);
 }
 
+.online .container .box:hover .image img {
+    transform: scale(1.1);
+}
+
 .online .container .box .image img{
     width: 100%;
+    transition: .8s;
+
     height: auto;
 }
 
