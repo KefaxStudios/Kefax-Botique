@@ -76,19 +76,21 @@ header{
 .showcase {
     padding: 60px 4% 20px 4%;
     display: grid;
-    grid-template-columns: repeat(2, 1fr);
+    /* grid-template-columns: repeat(2, 1fr); */
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
     background-image: linear-gradient(to right, white 0%, white 40%, pink 40%, pink 100%);
-
 }
 
 .showcase .image{
     display: flex;
     align-items: center;
     justify-content: center;
+    max-width: 100%;
 }
 
 .showcase .image img{
-    height: 80vh;
+    height: auto;
+    width: 100%;
 }
 
 /* form beginds here  */
